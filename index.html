@@ -38,6 +38,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </form>
 
 <div style="height:1500px"></div>
-
+<script>
+document.getElementById("contact-form").addEventListener("submit", function() {
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({
+    event: "signup_complete"
+  });
+});
+</script>
 </body>
 </html>
